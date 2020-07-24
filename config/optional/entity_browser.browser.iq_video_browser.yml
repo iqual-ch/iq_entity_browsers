@@ -1,0 +1,52 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - media.type.video
+    - views.view.iq_media_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+name: iq_video_browser
+label: Video-Browser
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Video auswählen'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  cdfa511f-51b9-4a88-9114-7adeea363522:
+    settings:
+      view: iq_media_browser
+      view_display: entity_browser_3
+      submit_text: 'Video auswählen'
+      auto_select: false
+    uuid: cdfa511f-51b9-4a88-9114-7adeea363522
+    weight: 1
+    label: 'Video auswählen'
+    id: view
+  89efd8a5-f738-41f4-a884-1117aff0cde3:
+    settings:
+      form_mode: default
+      media_type: video
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Dateien auf diese Fläche ziehen, um diese hochzuladen.'
+      max_filesize: 100M
+      extensions: mp4
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Video hochladen'
+    uuid: 89efd8a5-f738-41f4-a884-1117aff0cde3
+    weight: 3
+    label: 'Video hochladen'
+    id: dropzonejs_media_entity_inline_entity_form

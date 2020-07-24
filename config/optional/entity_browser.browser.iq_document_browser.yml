@@ -1,0 +1,52 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - media.type.document
+    - views.view.iq_media_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+name: iq_document_browser
+label: Dokumenten-Browser
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Dokumente auswählen'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  f09e9efb-ed60-43ba-99bf-5d425579b78a:
+    settings:
+      view: iq_media_browser
+      view_display: entity_browser_1
+      submit_text: 'Dokument auswählen'
+      auto_select: false
+    uuid: f09e9efb-ed60-43ba-99bf-5d425579b78a
+    weight: 1
+    label: 'Dokument auswählen'
+    id: view
+  bea2ac3a-c254-489f-8a20-6f0aa3a06e74:
+    settings:
+      form_mode: default
+      media_type: document
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Dateien auf diese Fläche ziehen, um diese hochzuladen.'
+      max_filesize: 100M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Dokument speichern'
+    uuid: bea2ac3a-c254-489f-8a20-6f0aa3a06e74
+    weight: 2
+    label: 'Dokument hochladen'
+    id: dropzonejs_media_entity_inline_entity_form

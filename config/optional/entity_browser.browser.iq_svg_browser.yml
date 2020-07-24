@@ -1,0 +1,52 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - media.type.svg
+    - views.view.iq_media_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+name: iq_svg_browser
+label: SVG-Browser
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'SVG auswählen'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  7b58f02c-e5b4-4f90-9dd1-0491780dc321:
+    settings:
+      view: iq_media_browser
+      view_display: entity_browser_4
+      submit_text: 'SVG auswählen'
+      auto_select: false
+    uuid: 7b58f02c-e5b4-4f90-9dd1-0491780dc321
+    weight: 1
+    label: 'SVG auswählen'
+    id: view
+  2d11435a-87ab-4d28-a2f1-51c927240e4e:
+    settings:
+      form_mode: default
+      media_type: svg
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Dateien auf diese Fläche ziehen, um diese hochzuladen.'
+      max_filesize: 100M
+      extensions: svg
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'SVG hochladen'
+    uuid: 2d11435a-87ab-4d28-a2f1-51c927240e4e
+    weight: 2
+    label: 'SVG hochladen'
+    id: dropzonejs_media_entity_inline_entity_form

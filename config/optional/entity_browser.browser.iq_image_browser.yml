@@ -1,0 +1,52 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - views.view.iq_media_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+name: iq_image_browser
+label: Bild-Browser
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Bild auswählen'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  53adedc3-e279-4278-b0b6-1024832c3752:
+    settings:
+      view: iq_media_browser
+      view_display: entity_browser_2
+      submit_text: 'Bild auswählen'
+      auto_select: false
+    uuid: 53adedc3-e279-4278-b0b6-1024832c3752
+    weight: 1
+    label: 'Bild auswählen'
+    id: view
+  b0ef9520-bd2c-4322-8a2a-57a37cf4a133:
+    settings:
+      form_mode: default
+      media_type: image
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Dateien auf diese Fläche ziehen, um diese hochzuladen.'
+      max_filesize: 100M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: true
+      resize_width: 2400
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Bild hochladen'
+    uuid: b0ef9520-bd2c-4322-8a2a-57a37cf4a133
+    weight: 2
+    label: 'Bild hochladen'
+    id: dropzonejs_media_entity_inline_entity_form
