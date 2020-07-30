@@ -1,0 +1,35 @@
+{
+  "name": "drupal/iq_entity_browsers",
+  "description": "Entity browsers for pagedesigner",
+  "type": "drupal-custom-module",
+  "keywords": [
+    "Drupal",
+    "Editing"
+  ],
+  "homepage": "https://github.com/iqual-ch/iq_entity_browsers",
+  "support": {
+    "issues": "https://github.com/iqual-ch/iq_entity_browsers/issues",
+    "source": "http://cgit.drupalcode.org/iq_entity_browsers"
+  },
+  "license": "GPL-2.0+",
+  "require": {
+    "drupal/core": ">=8.6",
+    "drupal/dropzonejs": "*",
+    "drupal/entity_browser": "*",
+    "drupal/inline_entity_form": "*"
+  },
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "enyo/dropzone",
+        "type": "drupal-library",
+        "version": "5.7.0",
+        "dist": {
+          "url": "https://github.com/enyo/dropzone/archive/v5.7.0.zip",
+          "type": "zip"
+        }
+      }
+    }
+  ]
+}

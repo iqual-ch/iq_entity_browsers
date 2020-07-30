@@ -1,0 +1,15 @@
+name: Entity browsers for pagedesigner
+description: This modules adds entity browsers for all pagedesigner media types.
+package: pagedesigner
+
+type: module
+core: 8.x
+
+dependencies:
+  - pagedesigner:pagedesigner_media
+  - core:views
+  - core:media
+  - core:image
+  - core:taxonomy
+  - entity_browser:entity_browser_entity_form
+  - dropzonejs:dropzonejs_eb_widget
