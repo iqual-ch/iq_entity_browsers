@@ -1,0 +1,41 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - views.view.iq_media_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: iq_embed_browser
+label: Embed-Browser
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Embed auswählen'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  2693ecaf-620a-4358-adad-6d9510534b02:
+    settings:
+      view: iq_media_browser
+      view_display: entity_browser_6
+      submit_text: 'Embed auswählen'
+      auto_select: false
+    uuid: 2693ecaf-620a-4358-adad-6d9510534b02
+    weight: 1
+    label: 'Embed auswählen'
+    id: view
+  703e3408-870f-405f-b8e1-c7233e0b6246:
+    settings:
+      entity_type: media
+      bundle: embed
+      form_mode: default
+      submit_text: 'Embed hinzufügen'
+    uuid: 703e3408-870f-405f-b8e1-c7233e0b6246
+    weight: 2
+    label: 'Embed hinzufügen'
+    id: entity_form
