@@ -3,12 +3,6 @@ status: true
 dependencies:
   config:
     - image.style.thumbnail
-    - media.type.audio
-    - media.type.document
-    - media.type.embed
-    - media.type.image
-    - media.type.svg
-    - media.type.video
     - taxonomy.vocabulary.media_category
   module:
     - entity_browser
