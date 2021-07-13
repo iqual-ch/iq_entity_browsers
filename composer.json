@@ -16,7 +16,8 @@
     "drupal/core": ">=8.6",
     "drupal/dropzonejs": "*",
     "drupal/entity_browser": "*",
-    "drupal/inline_entity_form": "*"
+    "drupal/inline_entity_form": "*",
+    "drupal/svg_formatter": "*"
   },
   "repositories": [
     {

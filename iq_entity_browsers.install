@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the iq_entity_browsers module.
+ */
+
+/**
+ * Install svg_formatter module & add formatter to view.
+ */
+function iq_entity_browsers_update_8001() {
+  \Drupal::service('module_installer')->install(['svg_formatter']);
+}
