@@ -13,3 +13,4 @@ dependencies:
   - core:taxonomy
   - entity_browser:entity_browser_entity_form
   - dropzonejs:dropzonejs_eb_widget
+  - svg_formatter:svg_formatter
