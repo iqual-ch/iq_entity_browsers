@@ -6,7 +6,7 @@
  */
 
 /**
- * Install svg_formatter module & add formatter to view.
+ * Install svg_formatter module.
  */
 function iq_entity_browsers_update_8001() {
   \Drupal::service('module_installer')->install(['svg_formatter']);
