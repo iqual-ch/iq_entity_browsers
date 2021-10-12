@@ -3,7 +3,7 @@ description: This modules adds entity browsers for all pagedesigner media types.
 package: pagedesigner
 
 type: module
-core: 8.x
+core_version_requirement: ^8.8 || ^9
 
 dependencies:
   - pagedesigner:pagedesigner_media
