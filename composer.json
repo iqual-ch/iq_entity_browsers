@@ -14,10 +14,10 @@
   "license": "GPL-2.0+",
   "require": {
     "drupal/core": ">=8.6",
-    "drupal/dropzonejs": "*",
-    "drupal/entity_browser": "*",
-    "drupal/inline_entity_form": "*",
-    "drupal/svg_formatter": "*"
+    "drupal/dropzonejs": "^2.5",
+    "drupal/entity_browser": "^2.5",
+    "drupal/inline_entity_form": "^1.0",
+    "drupal/svg_formatter": "^1.15"
   },
   "repositories": [
     {
