@@ -1,5 +1,5 @@
 {
-  "name": "drupal/iq_entity_browsers",
+  "name": "iqual/iq_entity_browsers",
   "description": "Entity browsers for pagedesigner",
   "type": "drupal-custom-module",
   "keywords": [
