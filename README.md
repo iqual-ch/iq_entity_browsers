@@ -7,5 +7,3 @@
 
 - If any pagedesigner media type is not installed, you might want to delete the corresponding displays from the view (iq_media_browser)
 - Add the entity browsers to the media reference fields you want. Make sure to match entity browser and media type.
-- Grant Entity Browser permissions to roles
-- Grant dropzonejs permission to roles
