@@ -5,6 +5,8 @@
  * Install, update and uninstall functions for the iq_entity_browsers module.
  */
 
+use Drupal\user\Entity\Role;
+
 /**
  * Grant permissions.
  */
