@@ -5,6 +5,27 @@
  * Install, update and uninstall functions for the iq_entity_browsers module.
  */
 
+use Drupal\user\Entity\Role;
+
+/**
+ * Grant permissions.
+ */
+function iq_entity_browsers_install() {
+  foreach (['author', 'editor', 'designer'] as $roleId) {
+    $role = Role::load($roleId);
+    if ($roleId) {
+      $role->grantPermission('access iq_audio_browser entity browser pages');
+      $role->grantPermission('access iq_image_browser entity browser pages');
+      $role->grantPermission('access iq_document_browser entity browser pages');
+      $role->grantPermission('access iq_embed_browser entity browser pages');
+      $role->grantPermission('access iq_svg_browser entity browser pages');
+      $role->grantPermission('access iq_video_browser entity browser pages');
+      $role->grantPermission('dropzone upload files');
+      $role->save();
+    }
+  }
+}
+
 /**
  * Install svg_formatter module.
  */
