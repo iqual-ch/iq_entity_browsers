@@ -16,7 +16,7 @@
     "drupal/core": ">=8.6",
     "drupal/dropzonejs": "^2.5",
     "drupal/entity_browser": "^2.5",
-    "drupal/inline_entity_form": "^2.0",
+    "drupal/inline_entity_form": "^1.0 || ^2.0",
     "drupal/svg_formatter": "^1.15",
     "npm-asset/exif-js": "^2.3",
     "npm-asset/dropzone": "^5.9"
