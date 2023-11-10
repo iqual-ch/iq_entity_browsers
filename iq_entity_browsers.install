@@ -13,7 +13,7 @@ use Drupal\user\Entity\Role;
 function iq_entity_browsers_install() {
   foreach (['author', 'editor', 'designer'] as $roleId) {
     $role = Role::load($roleId);
-    if ($roleId) {
+    if ($role) {
       $role->grantPermission('access iq_audio_browser entity browser pages');
       $role->grantPermission('access iq_image_browser entity browser pages');
       $role->grantPermission('access iq_document_browser entity browser pages');
